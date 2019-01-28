@@ -26,12 +26,12 @@ func main() {
 	botID = user.ID
 	discord.AddHandler(commandHandler)
 	discord.AddHandler(func(discord *discordgo.Session, ready *discordgo.Ready) {
-		err = discord.UpdateStatus(0, "A friendly helpful bot!")
+		err = discord.UpdateStatus(0, "Yeah")
 		if err != nil {
 			fmt.Println("Error attempting to set my status")
 		}
 		servers := discord.State.Guilds
-		fmt.Printf("SuperAwesomeOmegaTutorBot has started on %d servers", len(servers))
+		fmt.Printf("OhDaddy has started on %d servers", len(servers))
 	})
 
 	err = discord.Open()
@@ -61,8 +61,18 @@ func commandHandler(discord *discordgo.Session, message *discordgo.MessageCreate
 		discord.ChannelMessageSend(message.ChannelID, "Pong")
 		return
 	}
-
+	if message.Content == "!github" {
+		discord.ChannelMessageSend(message.ChannelID, "https://github.com/Bmbus/Oh_Daddy")
+		return
+	}
 	//content := message.Content
 
-	fmt.Printf("Message: %+v || From: %s\n", message.Message, message.Author)
+	// fmt.Printf("Message: %+v || From: %s\n", message.Message, message.Author)
 }
+
+// func github(discord *discordgo.Session, message discordgo.Message) {
+// 	if message.Content == "!github" {
+// 		discord.ChannelMessageSend(message.ChannelID, "https://github.com/Bmbus/Oh_Daddy")
+// 		return
+// 	}
+// }

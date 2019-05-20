@@ -1,0 +1,31 @@
+{
+  "name": "kek",
+  "version": "1.0.0",
+  "description": "A discord bot to improve my js skills",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bmbus/KEK.git"
+  },
+  "keywords": [
+    "discord",
+    "discord-bot",
+    "javascript"
+  ],
+  "author": "Bmbus",
+  "license": "MIT",
+  "dependencies": {
+    "discord.js": "^11.1.0",
+    "discord.js-musicbot-addon": "^13.5.2",
+    "opusscript": "^0.0.3",
+    "simple-youtube-api": "^3.0.0",
+    "ytdl-core": "^0.16.0"
+  },
+  "bugs": {
+    "url": "https://github.com/Bmbus/KEK/issues"
+  },
+  "homepage": "https://github.com/Bmbus/KEK#readme"
+}

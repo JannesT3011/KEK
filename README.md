@@ -1,6 +1,6 @@
 <div align="center"> 
     <h1>KEK</h1>
-    <strong>! This is a Repo for testing javascript and discord.js !</strong> <br>
+    <strong>! This is a Repo for testing javascript and discord.js !</strong> </br>
     The bot has two command at the moment:
 
     - `music` ~ `<prefix>play <link>`
